@@ -2,7 +2,7 @@
 /**
  * Date: November 26, 2020
  * Author: Khari Woods
- * Assignment 6
+ * Assignment 
  */
 
  $returnLink = "<a href='employeeSearch.php'>Return to Search Page</a>"
@@ -34,7 +34,7 @@ if(mysqli_connect_errno()){
 
 
 
-//KW if database connection is successful then pass user inputs to the database and make
+//KW if database connection is successful then pass user inputs to the database and 
 //appropriate queries.
 $empFirstName = '';
 $empLastName = '';
@@ -81,7 +81,7 @@ while($row = $result->fetch_assoc()){
     
 
 echo "</table>";
-//KW display result in a table
+//KW display result in a tab
 ?>
     
 </body>
