@@ -5,6 +5,8 @@
  * Assignment 
  */
 
+
+ //KW test
  $returnLink = "<a href='employeeSearch.php'>Return to Search Page</a>"
 ?>
 
@@ -35,7 +37,7 @@ if(mysqli_connect_errno()){
 
 
 //KW if database connection is successful then pass user inputs to the database and 
-//appropriate queries.
+//appropriate queri
 $empFirstName = '';
 $empLastName = '';
 $searchLimit = '';
@@ -46,7 +48,7 @@ $orderByLastOrFirstName = '';
 
 
 if(isset($_GET['submit'])){
-    //KW capture and store user inputs in a variables.
+    //KW capture and store user inputs in a variabl
     $empFirstName = htmlspecialchars($_GET['firstName']);
     $empLastName = htmlspecialchars($_GET['lastName']);
     $searchLimit = $_GET['limitSearchResults'];
@@ -56,11 +58,12 @@ if(isset($_GET['submit'])){
     echo "You clicked submit";
     $query = "SELECT * FROM employee WHERE FIRST_NAME LIKE '%$empFirstName%';";
 }else{
-    //Kw link to return user to page.
+    //Kw link to return user to p
     echo $returnLink;
 }
 $result = $dbconnection->query($query);
 $num_results = $result->num_rows;
+//Test
 echo "<p>Total Results: $num_results </p>";
 echo "<h2>Search Results</h2>";
 echo "<table>
@@ -79,7 +82,7 @@ while($row = $result->fetch_assoc()){
     echo "</tr>";
 }
     
-
+//test
 echo "</table>";
 //KW display result in a tab
 ?>
