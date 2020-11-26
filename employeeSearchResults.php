@@ -52,7 +52,7 @@ if(isset($_GET['submit'])){
     $searchLimit = $_GET['limitSearchResults'];
     $resultOrder = $_GET['ascOrDesc'];
     $orderByLastOrFirstName = $_GET['orderResultsBy'];
-    //Assign values to variable and run a query.
+    //Assign values to variable and run
     echo "You clicked submit";
     $query = "SELECT * FROM employee WHERE FIRST_NAME LIKE '%$empFirstName%';";
 }else{
