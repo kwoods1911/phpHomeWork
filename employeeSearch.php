@@ -38,7 +38,7 @@ Returned
 <label for="limitSearchResults">Limit Search Results</label>
 <select name="limitSearchResults" id="limitSearchResults">
 <option value="2">2</option>
-<!-- Set default to 5 -->
+<!-- Set defaul -->
 <option value="5" selected="selected">5</option>
 <option value="10">10</option>
 <option value="15">15</option>
